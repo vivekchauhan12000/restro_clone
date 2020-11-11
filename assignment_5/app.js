@@ -6,7 +6,7 @@ const resto = require('./models/resto');
 app.use(express.json())
 
 const url="";
-mongoose.connect('mongodb+srv://user:admin@cluster0.fhcsh.mongodb.net/rstro?retryWrites=true&w=majority',{
+mongoose.connect('http://localhost:4500',{
   useNewUrlParser:true,useUnifiedTopology:true
 },console.log("connected"))
 
